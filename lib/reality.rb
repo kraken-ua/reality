@@ -5,6 +5,7 @@ require 'fileutils'
 
 require 'backports/latest'
 require 'memoist'
+require 'hm'
 
 require 'money'
 require 'geo/coord'
@@ -25,7 +26,7 @@ module Reality
   end
 
   # basic functionality
-  require_ %w[version config measure tz_offset date coord currency]
+  require_ %w[version config measure tz_offset date coord currency coerce]
   require_ %w[setup util util/description util/refinements util/parsers util/formatters]
 
   # engines
